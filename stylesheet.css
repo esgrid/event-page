@@ -1,0 +1,53 @@
+body {
+    background-color:rgb(239, 248, 233);
+    font-family: Helvetica;
+}
+
+h1, h2 {
+    color:cadetblue;
+}
+
+main {
+    margin-bottom: 200px;
+}
+
+.element{
+    background-color: rgb(223, 250, 252);
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    display: inline-block;
+    border: 1px solid rgb(163, 179, 206);
+    border-radius: 5px;
+    color: rgb(64, 79, 94)
+}
+
+img {
+    width: 300px;
+}
+
+.tags {
+    background-color: rgb(238, 238, 225);
+    padding: 10px;
+    text-align: center;
+    border: thin solid rgb(86, 143, 46);
+    border-radius: 3px;
+}
+
+p.tags:hover {
+    background-color: aliceblue;
+}
+
+.price {
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* margin: 0 auto; */
+    text-align: center;
+    color: rgb(64, 79, 94);
+    background-color: rgb(198, 230, 219);
+}
