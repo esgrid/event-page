@@ -14,12 +14,24 @@ main {
 .element{
     background-color: rgb(223, 250, 252);
     padding: 20px;
-    margin: 10px;
-    width: 300px;
+    /* Remove margin and width because we're using grid */
+    /* margin: 10px;
+    width: 300px; */
     display: inline-block;
     border: 1px solid rgb(163, 179, 206);
     border-radius: 5px;
-    color: rgb(64, 79, 94)
+    color: rgb(64, 79, 94);
+    /* Flex use here! - one line, one dimension thinking */
+    display: flex;
+    flex-direction: column;
+}
+
+.clicked {
+    background-color: bisque;
+}
+
+.element:hover {
+    cursor: pointer;
 }
 
 img {
@@ -32,6 +44,7 @@ img {
     text-align: center;
     border: thin solid rgb(86, 143, 46);
     border-radius: 3px;
+    margin-top: auto;
 }
 
 p.tags:hover {
@@ -50,4 +63,26 @@ footer {
     text-align: center;
     color: rgb(64, 79, 94);
     background-color: rgb(198, 230, 219);
+}
+
+.plant-group {
+    /* grid on the parent! of the elements*/
+    display: grid;
+    /*default is (so we don't set it)
+    grid-template-columns: 1fr
+    */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    gap: 15px;
+}
+
+@media(min-width: 500px){
+    .plant-group {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 900px){
+    .plant-group {
+        grid-template-columns: 1fr 1fr 1fr;
+    }    
 }

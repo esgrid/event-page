@@ -138,7 +138,15 @@ const plants = [
     individualElement.appendChild(image)
     individualElement.appendChild(price)
     individualElement.appendChild(tag)
-    
+    individualElement.addEventListener('click', () => {
+      if (individualElement.classList.contains('clicked')) {
+        individualElement.classList.remove('clicked')
+      } else{
+        individualElement.classList.add('clicked');
+      }
+      
+      console.log("clicked")
+    })
     // Adding the whole <div> child to the main element
     content.appendChild(individualElement)
   }
