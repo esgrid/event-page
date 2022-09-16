@@ -144,8 +144,6 @@ const plants = [
       } else{
         individualElement.classList.add('clicked');
       }
-      
-      console.log("clicked")
     })
     // Adding the whole <div> child to the main element
     content.appendChild(individualElement)
